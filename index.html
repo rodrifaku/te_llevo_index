@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Fractal by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+<style>
+	/* Estilos para el botón de descarga */
+	.descarga-button {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: #007BFF;
+		color: #fff;
+		text-decoration: none;
+		border: none;
+		border-radius: 5px;
+		font-size: 18px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+	.descarga-button:hover {
+		background-color: #0056b3;
+	}
+
+	.image-separator {
+		margin-bottom: 20px;
+	}
+
+	.responsive-image {
+		max-width: 100%;
+		/* La imagen no se expandirá más allá del tamaño de su contenedor */
+		height: auto;
+		/* Mantiene la proporción de aspecto original de la imagen */
+	}
+</style>
+
+<body class="is-preload">
+
+	<header id="header">
+		<div class="content">
+			<br />
+			<h1><a href="#">TeLlevo APP</a></h1><br>
+
+			<p>Descarga la app de TeLlevoAPP<br />
+				Gestionador de viajes entre conductores y pasajeros </p>
+			<ul class="actions">
+				<li>
+					<script>
+						if (/Android/i.test(navigator.userAgent)) {
+							var androidDownloadButton = document.createElement('a');
+							androidDownloadButton.href = 'apks/teLlevoApp.apk';
+							androidDownloadButton.textContent = 'Descargar en Android';
+							document.querySelector('#header').appendChild(androidDownloadButton);
+						} else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+							var iosDownloadButton = document.createElement('a');
+							iosDownloadButton.href = '#';
+							
+							iosDownloadButton.textContent = 'Descargar en iOS(Próximamente)';
+							iosDownloadButton.className = 'descarga-button';
+							document.querySelector('#header').appendChild(iosDownloadButton);
+
+							
+						} else {
+							var qrCodeImage = document.createElement('img');
+							qrCodeImage.src = 'images/aplicacion.png';
+							document.querySelector('#header').appendChild(qrCodeImage);
+						}
+					</script>
+
+				</li>
+				<li>
+					<a href="#one" class="button icon solid fa-chevron-down scrolly">¿Para que sirve?</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="image phone">
+			<div class="inner">
+				<img src="images/TellevoApp.png" alt="" class="image-separator" />
+			</div>
+		</div>
+
+
+
+	</header>
+
+	
+	<section id="one" class="wrapper">
+		<div class="inner alt">
+			<section class="spotlight">
+				<div class="image"><img src="images/Tellevo.png" alt="" /></div>
+				<div class="content">
+					<h3>Alumnos que "SI" cuentan con movilización propia</h3>
+					<p>Ingresan a la App para programar su viaje de retorno
+						y fijan el costo del viaje por persona.</p>
+				</div>
+			</section>
+			<section class="spotlight">
+				<div class="image"><img src="images/comparto.webp" alt="" /></div>
+				<div class="content">
+					<h3>Alumnos que "NO" cuentan con movilización propia</h3>
+					<p>Ingresan a la App para verificar si hay vehículos con capacidad para transportarlos.</p>
+				</div>
+			</section>
+
+		</div>
+	</section>
+
+
+
+	
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+		</ul>
+		<ul class="icons">
+			<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+			<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="#" class="icon brands fa-500px"><span class="label">500px</span></a></li>
+			<li><a href="#" class="icon brands fa-steam"><span class="label">Steam</span></a></li>
+		</ul>
+		<ul class="icons">
+			<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			<li><a href="#" class="icon solid fa-mobile-alt"><span class="label">Phone</span></a></li>
+			<li><a href="#" class="icon solid fa-home"><span class="label">Address</span></a></li>
+		</ul>
+		<ul class="content">
+			<li>&copy; Rodrigo Faúndez.</li>
+
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
